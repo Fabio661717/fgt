@@ -1,0 +1,982 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #080808;
+  color: #fff;
+  background: linear-gradient(to bottom, #000, #333);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+span {
+color: #ff0000
+
+}
+/* Estilos para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+ .container {
+ 
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+}
+
+/* Estilos para telas com largura máxima de 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+ .container {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/* Estilos para o container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos para o título */
+.titulo {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Estilos para o vídeo */
+.video {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.video:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para links */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+/* Estilos para imagens */
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos para botões */
+
+
+/* Estilos para o header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #007bff;
+  border-radius: 20px;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+}
+
+/* Estilos para o main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+  
+  header nav li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  
+  main {
+    padding: 10px;
+  }
+}
+/* Componentes reutilizáveis */
+.box {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Títulos e parágrafos */
+.box h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+.box p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Produtos */
+.produtos ul {
+  margin: 0;
+  padding: 0;
+}
+
+.produto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Animação da foto */
+.foto {
+  position: relative;
+  animation: mover-foto 10s infinite;
+}
+
+@keyframes mover-foto {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, 0);
+  }
+  50% {
+    transform: translate(50px, 0);
+  }
+  75% {
+    transform: translate(0, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Informações do produto */
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+ .foto {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+ .info-produto {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+ .foto {
+    height: 150px;
+  }
+  
+ .info-produto h3 {
+    font-size: 16px;
+  }
+  
+ .info-produto p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+/* Efeitos de hover */
+
+
+/* Ranking */
+.ranking {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+.ranking h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ranking ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ranking li {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ranking li:last-child {
+  border-bottom: none;
+}
+
+/* Estilos de texto */
+.posicao {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.nome-produto {
+  font-weight: bold;
+  color: #333;
+}
+
+.avaliacao,.aprovação {
+  color: #666;
+}
+
+.estrelas {
+  color: #f7dc6f;
+}
+
+.ranking-5melhores {
+  color: #ff0000;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+.info-produto {
+  flex: 1;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.info-produto h1,.info-produto h3 {
+  margin-bottom: 10px;
+}
+
+.info-produto h1 {
+  color: #ff0000;
+  font-size: 24px;
+}
+
+.info-produto h3 {
+  font-size: 18px;
+}
+
+.info-produto p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+ .ranking {
+    margin: 20px auto;
+  }
+  
+ .ranking h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+ .ranking {
+    margin: 10px auto;
+  }
+  
+ .ranking h2 {
+    font-size: 18px;
+  }
+}
+
+/* Imagens de rodapé */
+.imagem-rodape {
+  width: 20%;
+  height: 150px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.imagem-rodape-2 {
+  height: 120px;
+}
+
+/* Imagens de produto */
+.imagem-produto {
+  transition: transform 0.5s ease-in-out;
+}
+
+.imagem-produto:hover {
+  transform: scale(1.5);
+}
+
+/* Botões */
+
+
+
+
+}
+
+/* Botão largo */
+.botao-largo {
+  width: 100%;
+  height: 50px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+.imagem-rodape {
+    width: 20%;
+  }
+  
+.botao-largo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+.imagem-rodape {
+    width: 30%;
+  }
+  
+.botao-largo {
+    height: 30px;
+  }
+}
+
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animação de fade-in */
+.titulo {
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+ .loader {
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+ .loader::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Efeitos de hover */
+.botao:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Comportamento de rolagem */
+
+/* Parallax */
+.parallax {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #333, #fff);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Animação de fade-in */
+.titulo {
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Produto */
+.produto {
+  position: relative;
+}
+
+/* Loader */
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+.parallax {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+.parallax {
+    height: 30vh;
+  }
+  
+.loader::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Animação de fade-in */
+.titulo {
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* Título em destaque */
+.titulo-destaque {
+  font-size: 36px;
+  color: #fe0000;
+}
+
+.destaques {
+  text-decoration: underline;
+}
+
+/* Botão de voltar */
+#botao-voltar {
+  position: relative;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+ .titulo-destaque {
+    font-size: 24px;
+  }
+  
+  #botao-voltar {
+    padding: 5px 10px;
+  }
+}
+/* Efeito de tooltip */
+#botao-voltar:hover +.tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Partículas de fundo */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Animação de gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Estilos de texto */
+h1, h2, h3, p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Botão */
+.botao {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+  
+  
+  
+}
+
+.botao:hover {
+  background-color: #cc0000;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+ .botao {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+ .botao {
+    padding: 5px 5px;
+  }
+}
+
+
+
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .botao2,.botao {
+     font-size: 14px;
+     padding: 8px 15px;
+     width: 45%;
+     margin: 5px;
+     display: inline-block;
+     background-color: #ff0000;
+     color: white;
+     border-radius: 5px;
+     text-decoration: none;
+     font-weight: bold;
+     text-align: center;
+     white-space: nowrap;
+     box-sizing: border-box;
+     transition: background-color 0.3s ease;
+     overflow: hidden;
+     max-width: 100%;
+   }
+   
+  .botoes {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+ }
+ 
+ /* Efeito de hover */
+ .botao2:hover,.botao:hover {
+   background-color: #cc0000;
+ }
+ 
+ /* Responsividade */
+ @media (max-width: 480px) {
+  .botao2,.botao {
+     width: 100%;
+     margin: 5px 0;
+   }
+ }
+
+ .imagem-produto {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.container {
+  max-width: 1200px; /* Ajuste de acordo com a necessidade */
+  margin: 40px auto; /* Ajuste de acordo com a necessidade */
+  padding: 20px; /* Ajuste de acordo com a necessidade */
+  box-sizing: border-box;
+}
+
+.imagem-topo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Opcional */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Opcional */
+}
+
+.texto-sobre-imagem {
+  padding: 20px; /* Ajuste de acordo com a necessidade */
+  text-align: center;
+}
+
+.texto-sobre-imagem h2 {
+  font-size: 24px; /* Ajuste de acordo com a necessidade */
+  margin-bottom: 10px;
+}
+
+.texto-sobre-imagem p {
+  font-size: 18px; /* Ajuste de acordo com a necessidade */
+  color: #ffffff; /* Ajuste de acordo com a necessidade */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+ .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+ .imagem-topo {
+    border-radius: 5px;
+  }
+  
+ .texto-sobre-imagem {
+    padding: 10px;
+  }
+  
+ .texto-sobre-imagem h2 {
+    font-size: 18px;
+  }
+  
+ .texto-sobre-imagem p {
+    font-size: 14px;
+  }
+}
+
+/* Animação */
+@keyframes mover-foto {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.imagem-produto {
+  animation: mover-foto 5s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+ .box {
+    width: 90%;
+  }
+ .produto {
+    flex-direction: column;
+  }
+ .imagem-produto {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+ .box {
+    width: 100%;
+    padding: 10px;
+  }
+ .produto {
+    margin-bottom: 10px;
+  }
+ .imagem-produto {
+    height: 150px;
+  }
+}
+
+.botao3 {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.botao3:hover {
+  background-color: #444;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+ .botao3 {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+ .botao3 {
+    right: 5px;
+    bottom: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}

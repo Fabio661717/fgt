@@ -1,0 +1,5 @@
+const video = document.querySelector('video');
+
+video.addEventListener('click', () => {
+  window.open('https://www.link-do-destino.com', '_blank');
+});
