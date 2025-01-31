@@ -317,7 +317,7 @@ li {
 /* Estilos de texto */
 .posicao {
   font-weight: bold;
-  color: #ff0000;
+  color: #178bf1;
 }
 
 .nome-produto {
@@ -357,7 +357,7 @@ footer {
 }
 
 .info-produto h1 {
-  color: #ff0000;
+  color: #147ac3;
   font-size: 24px;
 }
 
@@ -757,7 +757,7 @@ nav ul li a:hover {
 
 /* Estilos de texto */
 h1, h2, h3, p {
-  color: #fff;
+  color: #030303;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -829,7 +829,7 @@ h1, h2, h3, p {
  
  /* Efeito de hover */
  .botao2:hover,.botao:hover {
-   background-color: #cc0000;
+   background-color: #08a6f5;
  }
  
  /* Responsividade */
@@ -876,7 +876,7 @@ h1, h2, h3, p {
 
 .texto-sobre-imagem p {
   font-size: 18px; /* Ajuste de acordo com a necessidade */
-  color: #ffffff; /* Ajuste de acordo com a necessidade */
+  color: #000000; /* Ajuste de acordo com a necessidade */
 }
 
 /* Responsividade */
