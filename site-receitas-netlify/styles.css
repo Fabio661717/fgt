@@ -3,9 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #080808;
+  background-color:#aaa4a4;
   color: #fff;
-  background: linear-gradient(to bottom, #000, #333);
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -286,7 +286,7 @@ li {
   max-width: 1200px;
   margin: 40px auto;
   text-align: center;
-  background-color: #000000;
+  background-color: #dad9d9e4;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -317,7 +317,7 @@ li {
 /* Estilos de texto */
 .posicao {
   font-weight: bold;
-  color: #ff0000;
+  color: #178bf1;
 }
 
 .nome-produto {
@@ -357,7 +357,7 @@ footer {
 }
 
 .info-produto h1 {
-  color: #ff0000;
+  color: #147ac3;
   font-size: 24px;
 }
 
@@ -757,13 +757,13 @@ nav ul li a:hover {
 
 /* Estilos de texto */
 h1, h2, h3, p {
-  color: #fff;
+  color: #030303;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* Botão */
 .botao {
-  background-color: #ff0000;
+  background-color:#279a27;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -807,7 +807,7 @@ h1, h2, h3, p {
      width: 45%;
      margin: 5px;
      display: inline-block;
-     background-color: #ff0000;
+     background-color: #04ff00;
      color: white;
      border-radius: 5px;
      text-decoration: none;
@@ -829,7 +829,7 @@ h1, h2, h3, p {
  
  /* Efeito de hover */
  .botao2:hover,.botao:hover {
-   background-color: #cc0000;
+   background-color: #08a6f5;
  }
  
  /* Responsividade */
@@ -876,7 +876,7 @@ h1, h2, h3, p {
 
 .texto-sobre-imagem p {
   font-size: 18px; /* Ajuste de acordo com a necessidade */
-  color: #ffffff; /* Ajuste de acordo com a necessidade */
+  color: #000000; /* Ajuste de acordo com a necessidade */
 }
 
 /* Responsividade */
